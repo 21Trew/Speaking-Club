@@ -1,0 +1,444 @@
+@font-face {
+    font-family: "Articulat CF";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/ArticulatCF/ArticulatCF-Normal.woff2);
+}
+
+@font-face {
+    font-family: "Articulat CF";
+    font-style: normal;
+    font-weight: 200;
+    src: url(/fonts/ArticulatCF/ArticulatCF-Light.woff2);
+}
+
+@font-face {
+    font-family: "Articulat CF";
+    font-style: normal;
+    font-weight: 100;
+    src: url(/fonts/ArticulatCF/ArticulatCF-ExtraLight.woff2);
+}
+
+@font-face {
+    font-family: "Prego";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/Prego/PregoRegular.woff2);
+}
+
+body {
+    background-color: #F8F2EF;
+    color: #705647;
+    height: 100%;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 0;
+    margin-right: auto;
+}
+
+/* Блок навигации */
+
+header {
+    position: fixed;
+    background-color: #fefefe;
+    border-radius: 50px ;
+    border: 1px solid rgba(35, 35, 35, 0.20);
+    z-index: 10;
+}
+
+a {    
+    text-decoration: none;
+    color: #705647;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 1200px;
+    font-family: "Articulat CF", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.75px;
+}
+
+.anna-merculova {
+    margin-left: 0px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    float: left;
+    display: inline;
+    padding: 30px;
+}
+
+.nav-subscribe {
+    background-color: #705647;
+    height: 40px;
+    width: 170px;
+    border: none;
+    border-radius: 40px;
+    font-family: "Articulat CF", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.75px;
+    color: #fefefe;
+
+}
+
+/* Основной раздел */
+
+/* Приветсвенное окно */
+
+.main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    color: #232323;
+    background-color: #fefefe;
+    border: 1px solid rgba(35, 35, 35, 0.20);
+    border-radius: 50px;
+    font-family: "Articulat CF", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.54px;
+    margin-top: -120px;
+    width: 785px;
+}
+
+.main-title h1 {
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: -2.8px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 40px;
+}
+
+.font-prego {
+    font-family: "Prego";
+    font-size: 70px;
+    font-weight: 200;
+    letter-spacing: -2.8px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.main-title_bottom {
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+/* Блок "Продвигаю" */
+
+.about {
+    display: flex;
+    margin-top: 75px;
+    margin-bottom: 120px;
+}
+
+.about-photo {
+    padding-top: 50px;
+}
+
+.about-description {
+    font-family: "Articulat CF", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.72px;
+    margin: 0;
+    padding: 0;
+}
+
+.about-description h1 {
+    font-family: "Articulat CF", sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 90%;
+    letter-spacing: -2.8px;
+    margin: 0;
+    padding: 0;
+}
+
+.about-sub_h1 {
+    font-family: "Articulat CF", sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 90%;
+    letter-spacing: -2.8px;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 0;
+}
+
+.about-greeting {
+    margin: 0;
+    margin-top: 60px;
+    margin-left: 60px;
+    padding: 0;
+}
+
+.about-list {
+    
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 60px;
+    padding: 0;
+}
+
+.about-list_60 {
+    display: inline-block;
+}
+
+.about-list_10 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.about-list_5 {
+
+}
+
+.big-letters {
+    font-family: "Articulat CF", sans-serif;
+    font-style: normal;
+    font-size: 70px;
+    font-weight: 100;
+    line-height: 90%;
+    letter-spacing: -2.8px;
+    margin-right: 20px;
+}
+
+/* .about-line {
+    width: 240px;
+    height: 1px;
+    color: #705647;
+} */
+
+/* Блок "Образование" */
+
+.education {
+    width: 1160px;
+    height: 555px;
+    border: 1px solid rgba(35, 35, 35, 0.20);    
+    border-radius: 50px;
+    background:#FEFEFE; 
+    z-index: 2; 
+}
+
+.edu-circles {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+
+.education h1 {
+    font-family: "Articulat CF";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%;
+    letter-spacing: -2.8px;
+    color: #232323;
+    
+    margin: 0;
+    padding: 0;
+    margin-left: 760px;
+    margin-top: 40px;
+}
+
+.edu-photo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+}
+
+
+/* Блок "Опыт" */
+
+.exp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1280px;
+    height: 800px;
+    padding-left: 60px;
+    margin-top: -80px;
+    background: url(./images/Exp-back.png), no-repeat;
+    background-size: cover;
+    color: #FEFEFE;
+    font-family: "Articulat CF", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.72px;
+}
+
+.exp h1 {
+    font-family: "Articulat CF", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%;
+    letter-spacing: -2.8px;
+    margin-bottom: 60px;
+}
+/* 
+.exp-description {
+    margin: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.2);
+    background: rgba(248, 242, 239, 0.4);
+    width: fit-content;
+    border-radius: 60px;
+    padding: 30px;
+} */
+
+/* Блок "Процесс" */
+
+.process {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 120px;
+}
+
+.process-photo {
+    margin-top: -20px;
+}
+
+.process-description {
+    font-family: "Articulat CF", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.72px;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    margin-left: 90px;
+}
+
+.process-description h1 {
+    font-family: "Articulat CF", sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 90%;
+    letter-spacing: -2.8px;
+    margin: 0;
+    margin-left: -30px;
+    margin-bottom: 60px;
+}
+
+.process-description_between-top {
+    margin-top: 40px;
+}
+
+.process-description_between-bottom {
+    margin-bottom: 40px;
+}
+
+/* Блок "Тарифы" */
+
+.rates {
+    width: 1160px;
+    height: 435px;
+    background: #FEFEFE;
+    border-radius: 50px;
+    border: 1px solid rgba(35, 35, 35, 0.20);
+    color: #232323;
+}
+
+.rates h1 {
+    font-family: "Articulat CF", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%; /* 63px */
+    letter-spacing: -2.8px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.rates-circles {
+    float: right;
+    padding-top: 50px;
+    margin-right: 40px;
+}
+
+.rates-buttons {
+    display: flex;
+    width: 1080px;
+    height: 225px;
+    gap: 5px;
+    margin: 40px;
+}
+
+.rates-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 225px;
+    border: 1px solid rgba(35, 35, 35, 0.20);
+    border-radius: 50px;
+    margin: auto;
+}
+
+.rates-button P {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+}
+
+.rates-button_price {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -1px;
+    width: 270px;
+    height: 75px;
+    background: #232323;
+    border-radius: 50px;
+    color: #FEFEFE;
+}
+
+/* Блок "Отзывы" */
