@@ -139,42 +139,105 @@
         <!-- Feedback. Отзывы -->
         
         <section class="feedback" id="feedback">
+            <div class="feedback-arrows">
+                <img class="feedback-arrows_left" src="../Speaking Club/images/arrow-left.png" width="90px" height="90px">
+                <img class="feedback-arrows_right" src="../Speaking Club/images/arrow-right.png" width="90px" height="90px">
+            </div>
             <h1>Отзывы</h1>
+            <div class="slider-inner">
+                <div class="slider-slides">
+                    <div class="slider-slide">
+                        <a class="slider-user" href="https://t.me/Poly_pljuha">
+                            <div class="feedback_user-photo">
+                                <img class="poly_pljuha" src="../Speaking Club/images/Poly_pljuha.png" width="60px" height="60px">
+                            </div>
+                            <p class="feedback_user-name">
+                                Полина (@Poly_pljuha)
+                            </p>
+                        </a>
+                        <p class="feedback_user-text">
+                            Дорогая Анна Сергеевна! Хочу выразить вам огромную 
+                            благодарность. Благодаря вам и вашему индивидуальному 
+                            подходу к обучению у меня впервые да много лет не только не 
+                            теряется мотивация учить язык, да ещё и свои маленькие 
+                            успехи я чувствую гораздо чаще! Благодаря вам материал 
+                            усваивается, а не теряется в чертогах моего разума и теперь я 
+                            наконец-то могу говорить и понимать английский. Я очень 
+                            рада, что нашла своего преподавателя ❤️
+                        </p>
+                    </div>
+                    <div class="slider-slide">
+                        <a class="slider-user" href="https://t.me/pufis">
+                            <div class="feedback_user-photo">
+                                <img class="poly_pljuha" src="../Speaking Club/images/pufis.png" width="60px" height="60px">
+                            </div>
+                            <p class="feedback_user-name">
+                                Лиза (@pufis)
+                            </p>
+                        </a>
+                        <p class="feedback_user-text">
+                            Я пошла на английский спонтанно, но так втянулась! Анна 
+                            понимает и улавливает мои эмоции, настроение, если что-то 
+                            не выходит, то мы меняем формат. Я стала лучше понимать 
+                            мемасики и смешные видео, а так же могу на вокзале 
+                            вызвать такси иностранцу и поговорить с ним! Надеюсь, что 
+                            вырвусь куда-нибудь и применю свои знания по полной! Уроки 
+                            проходят очень комфортно для меня, я занимаюсь оффлайн и 
+                            мне важно живое общение с преподавателем. Благодарю 
+                            Анну за терпение ко мне и продуктивные уроки!
+                        </p>
+                    </div>
+                    <div class="slider-slide"></div>
+                    <div class="slider-slide"></div>
+                </div>
+            </div>
         </section>
-        <section class="call-to-action">
-            <h1>Есть вопросы?</h1>
-            <p>Заполните форму и я свяжусь с вами</p>
-            <p>Мы всегда рады новым собеседникам!</p>
-            <form action="index.html" method="post">
-                <input type="text" id="name" name="student_name" placeholder="Имя">
-                <input type="text" id="second name" name="student_second_name" placeholder="Фамилия">
-                <input type="tel" id="tel" name="student_tel" placeholder="Номер телефона">
 
-                <button type="submit">Отправить</button>
-            </form>
+        <!-- CTA. Форма записи -->
+
+        <section class="call-to-action">
+            <div class="white-back">
+                <div class="cta-form_questions">
+                    <h1>Есть вопросы?</h1>
+                    <p>Заполните форму и я свяжусь с вами</p>
+                    <p class="cta-form_description">Мы всегда рады новым собеседникам!</p>
+                </div>
+                <form class="cta-form" action="index.html" method="post">
+                    <input type="text" id="name" name="student_name" placeholder="Имя">
+                    <input type="text" id="second name" name="student_second_name" placeholder="Фамилия">
+                    <input type="tel" id="tel" name="student_tel" placeholder="Номер телефона">
+
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
         </section>
 
         <!-- Footer. Подвал -->
 
         <footer>
-            <section class="esc">
-                <div class="esc-english">
-                    ENGLISH
-                </div>
-                <div class="esc-speaking_club">
-                    SPEAKING CLUB
+            <section class="footer-left">
+                <section class="esc">
+                    <div class="esc-english">
+                        ENGLISH
+                    </div>
+                    <div class="esc-speaking_club">
+                        SPEAKING CLUB
+                    </div>
+                </section>
+                <div class="social-media">
+                    inst tg vk
                 </div>
             </section>
-            <section class="social-media">
-                inst tg vk
-            </section>
-            <section class="contacts" id="contacts">
-                <ul>
-                    <li>Обо мне</li>
-                    <li>Процесс</li>
-                    <li>Тарифы</li>
-                    <li>Отзывы</li>
-                </ul>
+            <section class="footer-right">
+                <section class="contacts" id="contacts">                    
+                    <p>Обо мне</p>
+                    <p>Процесс</p>
+                    <p>Тарифы</p>
+                    <p>Отзывы</p>                    
+                </section>
+                <div class="footer_up-button">
+                    <img class="up-button" src="../Speaking Club/images/up-button.png" width="160px" height="160px">
+                </div>
             </section>
         </footer>
     </body>

@@ -23,7 +23,14 @@
     font-family: "Prego";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Prego/PregoRegular.woff2);
+    src: url(/fonts/Prego/PregoRegular.woff2) format(.woff2);
+}
+
+@font-face {
+    font-family: "Prego";
+    font-style: normal;
+    font-weight: 100;
+    src: url(/fonts/Prego/PregoLight.woff2) format(.woff2);
 }
 
 body {
@@ -442,3 +449,250 @@ li {
 }
 
 /* Блок "Отзывы" */
+
+.feedback {
+    margin-top: 150px;
+    /* border: 1px solid rgba(35, 35, 35, 0.20); */
+    width: 1160px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.feedback h1 {
+    font-family: "Articulat CF", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%;
+    letter-spacing: -2.8px;
+    color: #232323;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.feedback-arrows {
+    float: right;
+    /* border: 1px solid rgba(35, 35, 35, 0.20); */
+    margin-top: -13.5px
+}
+
+.feedback-arrows_left {
+    margin-right: 40px;
+}
+
+.feedback-arrows_right {
+
+}
+
+.slider-slides {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.slider-slide {
+    width: 550px;
+    height: 350px;
+    background: #FEFEFE;
+    border: 1px solid rgba(35, 35, 35, 0.20);
+    border-radius: 50px;
+    margin-bottom: 150px;
+    color: #232323;
+}
+
+.slider-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: #232323;
+    width: fit-content;
+}
+
+.feedback_user-name {
+    font-family: "Articulat CF", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    width: fit-content;
+
+}
+
+.feedback_user-text {
+    font-family: "Articulat CF", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    width: 490px;
+    height: fit-content;
+    align-self: center;
+    margin: 0 30px;
+}
+
+/* Блок "CTA" */
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    height: 880px;
+    background: #232323;
+    border-radius: 50px;
+    margin-top: 150px;
+    color: #232323;
+}
+
+.white-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FEFEFE;
+    border-radius: 50px;
+    padding: 40px 345px;
+    height: 659px;
+    gap: 40px;
+}
+
+.white-back h1 {
+    font-family: "Articulat CF", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%; /* 63px */
+    letter-spacing: -2.8px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.cta-form_questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.white-back p {
+    font-family: "Articulat CF", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    margin-bottom: 0;
+}
+
+/* .cta-form_description {
+    padding-bottom: 40px;
+} */
+
+.cta-form {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+
+}
+
+.cta-form input {
+    height: 70px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    border: 1px solid rgba(35, 35, 35, 0.20);
+    border-radius: 50px;
+    background: #FEFEFE;
+
+}
+
+.cta-form button {
+    height: 70px;
+    /* margin-bottom: 40px; */
+    border: 1px solid rgba(35, 35, 35, 0.20);
+    border-radius: 50px;
+    background: #232323;
+    color: #FEFEFE;
+    font-family: "Articulat CF", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    width: 1280px;
+    padding: 150px 0;
+    gap: 319px;
+    color: #232323;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+.esc {
+    display: flex;
+    flex-direction: column;
+}
+
+.esc-english {
+    font-family: "Prego", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 100%;
+    letter-spacing: -2.8px;
+    text-transform: uppercase;
+}
+
+.esc-speaking_club {
+    font-family: "Articulate CF", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -2.8px;
+    text-transform: uppercase;
+}
+
+.footer-right {
+    display: flex;
+    gap: 100px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    font-family: "Articulat CF", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 25px */
+    letter-spacing: -1px;
+}
+
+.contacts p {
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.up-button {
+}
