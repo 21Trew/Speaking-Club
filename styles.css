@@ -694,5 +694,8 @@ footer {
     padding-bottom: 30px;
 }
 
-.up-button {
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
