@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Speaking Club</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <!-- Add the new slick-theme.css if you want the default styling -->
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     </head>
     <body>
 
@@ -13,16 +16,20 @@
         <header>
             <nav class="navigation">
                 <span class="anna-merculova">
-                    Анна Меркулова
+                    <a href="#">
+                        Анна Меркулова
+                    </a>                    
                 </span>
                 <ul class="nav-menu">
-                    <li><a href="#about">Обо мне</a></li>
-                    <li><a href="#process">Процесс</a></li>
-                    <li><a href="#rates">Тарифы</a></li>
-                    <li><a href="#feedback">Отзывы</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
+                    <li class="nav-menu__item"><a href="#about">Обо мне</a></li>
+                    <li class="nav-menu__item"><a href="#process">Процесс</a></li>
+                    <li class="nav-menu__item"><a href="#rates">Тарифы</a></li>
+                    <li class="nav-menu__item"><a href="#feedback">Отзывы</a></li>
+                    <li class="nav-menu__item"><a href="#contacts">Контакты</a></li>
                 </ul>
-                <button type="submit" class="nav-subscribe">Записаться</button>
+                <a href="#cta">
+                    <button type="submit" class="nav-subscribe">Записаться</button>
+                </a>
             </nav>
         </header>
 
@@ -107,7 +114,7 @@
                     <br>уровню тексты, интерактивные игры, обсуждаем видео и 
                     <br>прорабатываем грамматику.</p>
                 <p><b><i>Удобство</i></b></p>
-                <p>Встречаемся в зуме, один раз в неделю. Время и дату обговариваю со 
+                <p>Встречаемся в Zoom, один раз в неделю. Время и дату обговариваю со 
                     <br>всеми перед встречей.</p>
             </div>
         </section>
@@ -140,12 +147,16 @@
         
         <section class="feedback" id="feedback">
             <div class="feedback-arrows">
-                <img class="feedback-arrows_left" src="../Speaking Club/images/arrow-left.png" width="90px" height="90px">
-                <img class="feedback-arrows_right" src="../Speaking Club/images/arrow-right.png" width="90px" height="90px">
+                <a id="prev">
+                    <img class="feedback-arrows_left" src="../Speaking Club/images/arrow-left.png" width="90px" height="90px">
+                </a>
+                <a id="next">
+                    <img class="feedback-arrows_right" src="../Speaking Club/images/arrow-right.png" width="90px" height="90px">
+                </a>
             </div>
             <h1>Отзывы</h1>
-            <div class="slider-inner">
-                <div class="slider-slides">
+            <div id="slider-inner" class="slider-inner">
+                <div id="slider-slides" class="slider-slides">
                     <div class="slider-slide">
                         <a class="slider-user" href="https://t.me/Poly_pljuha">
                             <div class="feedback_user-photo">
@@ -187,27 +198,67 @@
                             Анну за терпение ко мне и продуктивные уроки!
                         </p>
                     </div>
-                    <div class="slider-slide"></div>
-                    <div class="slider-slide"></div>
+                    <div class="slider-slide">
+                        <a class="slider-user" href="https://t.me/Poly_pljuha">
+                            <div class="feedback_user-photo">
+                                <img class="poly_pljuha" src="../Speaking Club/images/Poly_pljuha.png" width="60px" height="60px">
+                            </div>
+                            <p class="feedback_user-name">
+                                Полина (@Poly_pljuha)
+                            </p>
+                        </a>
+                        <p class="feedback_user-text">
+                            Дорогая Анна Сергеевна! Хочу выразить вам огромную 
+                            благодарность. Благодаря вам и вашему индивидуальному 
+                            подходу к обучению у меня впервые да много лет не только не 
+                            теряется мотивация учить язык, да ещё и свои маленькие 
+                            успехи я чувствую гораздо чаще! Благодаря вам материал 
+                            усваивается, а не теряется в чертогах моего разума и теперь я 
+                            наконец-то могу говорить и понимать английский. Я очень 
+                            рада, что нашла своего преподавателя ❤️
+                        </p>
+                    </div>
+                    <div class="slider-slide">
+                        <a class="slider-user" href="https://t.me/pufis">
+                            <div class="feedback_user-photo">
+                                <img class="poly_pljuha" src="../Speaking Club/images/pufis.png" width="60px" height="60px">
+                            </div>
+                            <p class="feedback_user-name">
+                                Лиза (@pufis)
+                            </p>
+                        </a>
+                        <p class="feedback_user-text">
+                            Я пошла на английский спонтанно, но так втянулась! Анна 
+                            понимает и улавливает мои эмоции, настроение, если что-то 
+                            не выходит, то мы меняем формат. Я стала лучше понимать 
+                            мемасики и смешные видео, а так же могу на вокзале 
+                            вызвать такси иностранцу и поговорить с ним! Надеюсь, что 
+                            вырвусь куда-нибудь и применю свои знания по полной! Уроки 
+                            проходят очень комфортно для меня, я занимаюсь оффлайн и 
+                            мне важно живое общение с преподавателем. Благодарю 
+                            Анну за терпение ко мне и продуктивные уроки!
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-
+        
         <!-- CTA. Форма записи -->
 
         <section class="call-to-action">
             <div class="white-back">
-                <div class="cta-form_questions">
+                <div id="cta" class="cta-form_questions">
                     <h1>Есть вопросы?</h1>
                     <p>Заполните форму и я свяжусь с вами</p>
                     <p class="cta-form_description">Мы всегда рады новым собеседникам!</p>
                 </div>
                 <form class="cta-form" action="index.html" method="post">
-                    <input type="text" id="name" name="student_name" placeholder="Имя">
-                    <input type="text" id="second name" name="student_second_name" placeholder="Фамилия">
-                    <input type="tel" id="tel" name="student_tel" placeholder="Номер телефона">
+                    <input class="cta-form__item" type="text" id="name" name="student_name" placeholder="Имя">
+                    <input class="cta-form__item" type="text" id="second name" name="student_second_name" placeholder="Фамилия">
+                    <input class="cta-form__item" type="tel" id="tel" name="student_tel" placeholder="Номер телефона">
+                    <!-- <button type="submit" class="cta-button" id="cta-button">Отправить</button> -->
 
-                    <button type="submit">Отправить</button>
+                    <button class="cta-button" id="cta-button" ></button>
                 </form>
             </div>
         </section>
@@ -225,17 +276,17 @@
                     </div>
                 </section>
                 <div class="social-media">
-                    <p class="insta">
+                    <p class="insta social-media__item">
                         <a href="https://instagram.com/arn_byorn" target="_ blank">
                             <img src="./images/insta.svg">
                         </a>
                     </p>
-                    <p class="tg">
+                    <p class="tg social-media__item">
                         <a href="https://t.me/arn_byorn" target="_ blank">
                             <img src="./images/tg.svg">
                         </a>
                     </p>
-                    <p class="vk">
+                    <p class="vk social-media__item">
                         <a href="https://vk.com/arn_byorn" target="_ blank">
                             <img src="./images/vk.svg">
                         </a>
@@ -244,10 +295,10 @@
             </section>
             <section class="footer-right">
                 <section class="contacts" id="contacts">                    
-                    <p>Обо мне</p>
-                    <p>Процесс</p>
-                    <p>Тарифы</p>
-                    <p>Отзывы</p>                    
+                    <p class="contacts-item"><a href="#about">Обо мне</a></p>
+                    <p class="contacts-item"><a href="#process">Процесс</a></p>
+                    <p class="contacts-item"><a href="#rates">Тарифы</a></p>
+                    <p class="contacts-item"><a href="#feddback">Отзывы</a></p>                    
                 </section>
                 <div class="footer_up-button">
                     <a href="#">
@@ -256,5 +307,6 @@
                 </div>
             </section>
         </footer>
+        
     </body>
 </html>
