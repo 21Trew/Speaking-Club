@@ -45,6 +45,11 @@ body {
     margin-left: auto;
     margin-top: 0;
     margin-right: auto;
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 section {
@@ -59,10 +64,6 @@ header {
     border-radius: 50px ;
     border: 1px solid rgba(35, 35, 35, 0.20);
     z-index: 10;
-}
-
-.sticky {
-    
 }
 
 a {    
@@ -339,7 +340,7 @@ ul {
     height: 800px;
     padding-left: 60px;
     margin-top: -80px;
-    background: url(./images/Exp-back.png), no-repeat;
+    background: url(../images/Exp-back.png), no-repeat;
     background-size: cover;
     color: #FEFEFE;
     font-family: "Articulat CF", sans-serif;
@@ -781,7 +782,8 @@ footer {
     color: #232323;
 }
 
-.contacts-item:hover {
+.contacts-item:hover,
+.social-media__item:hover {
     scale: 1.2;
 }
 
@@ -794,4 +796,8 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+.up-button:hover {
+    scale: 0.95;
 }
