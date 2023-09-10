@@ -300,12 +300,6 @@ ul {
     margin-right: 20px;
 }
 
-/* .about-line {
-    width: 240px;
-    height: 1px;
-    color: #705647;
-} */
-
 /* Блок "Образование" */
 
 .education {
@@ -323,7 +317,6 @@ ul {
     margin-left: 40px;
 }
 
-
 .education h1 {
     font-family: "Articulat CF";
     font-size: 70px;
@@ -332,7 +325,6 @@ ul {
     line-height: 90%;
     letter-spacing: -2.8px;
     color: #232323;
-    
     margin: 0;
     padding: 0;
     margin-left: 760px;
@@ -347,7 +339,6 @@ ul {
     padding: 0;
     margin-top: 100px;
 }
-
 
 /* Блок "Опыт" */
 
@@ -517,12 +508,11 @@ ul {
     letter-spacing: -2.8px;
     color: #232323;
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 
 .feedback-arrows {
     float: right;
-    /* border: 1px solid rgba(35, 35, 35, 0.20); */
     margin-top: -13.5px;
 }
 
@@ -548,15 +538,17 @@ ul {
 .slick-slide {
     height: 350px;
     margin: 0 30px;
+    
 }
 
-/* .slider-slides {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.slick-track {
     overflow: visible;
-    justify-content: space-between;
-} */
+    padding-top: 5px; /*Позволяет корректно срабатывать scale для .slider-slide:hover*/
+}
+
+.slick-list {
+    height: 410px;
+}
 
 .slider-slide {
     width: 550px;
@@ -621,7 +613,7 @@ ul {
     height: 880px;
     background: #232323;
     border-radius: 50px;
-    margin-top: 150px;
+    margin-top: 120px;
     color: #232323;
 }
 
