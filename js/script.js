@@ -3,6 +3,8 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
-        dots: true
+        dots: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
     });
   });
