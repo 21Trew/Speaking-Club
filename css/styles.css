@@ -109,7 +109,6 @@ ul {
     height: 1px;
     right: 0;
     position: relative;
-/*   background: linear-gradient(to left, #f69ec4, #f9dd94 100%); */
     transition: width .5s ease 0s, left .5s ease 0s;
     width: 0;
 }
@@ -809,4 +808,8 @@ footer {
 
 .up-button:hover {
     scale: 0.95;
+}
+
+.up-button:active {
+    scale: 0.8;
 }
