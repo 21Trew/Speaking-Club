@@ -34,6 +34,10 @@
     src: url("/fonts/Prego/PregoLight.woff2") format("woff2");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #F8F2EF;
     color: #705647;
@@ -649,7 +653,6 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
     margin-top: 0;
     padding-top: 0;
 }
@@ -663,10 +666,6 @@ ul {
     letter-spacing: -0.72px;
     margin-bottom: 0;
 }
-
-/* .cta-form_description {
-    padding-bottom: 40px;
-} */
 
 .cta-form {
     display: flex;
