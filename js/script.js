@@ -11,3 +11,18 @@ $(document).ready(function(){
         nextArrow: $('.next')
     });
   });
+
+const upButton = document.querySelector(".up-button");
+
+window.addEventListener("scroll", trackScroll);
+
+function trackScroll() {
+    const scrolled = window.scrollY;
+    const coords = document.documentElement.clientHeight;
+
+    if (scrolled > coords) {
+        upButton.classList.add("up-button_show");
+    } else {
+        upButton.classList.remove("up-button_show");
+    }
+}
