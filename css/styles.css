@@ -2,36 +2,35 @@
     font-family: "Articulat CF";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/ArticulatCF/ArticulatCF-Normal.woff2);
+    src: url("../fonts/ArticulatCF-Normal.woff2") format(".woff2");
 }
 
 @font-face {
-    font-family: "Articulat CF";
+    font-family: "Articulat CF Light";
     font-style: normal;
     font-weight: 200;
-    src: url(/fonts/ArticulatCF/ArticulatCF-Light.woff2);
+    src: url("../fonts/ArticulatCF-Light.woff2") format(".woff2");
 }
 
 @font-face {
-    font-family: "Articulat CF";
+    font-family: "Articulat CF ExtraLight";
     font-style: normal;
     font-weight: 100;
-    src: url(/fonts/ArticulatCF/ArticulatCF-ExtraLight.woff2);
+    src: url("../fonts/ArticulatCF-ExtraLight.woff2") format(".woff2");
 }
 
 @font-face {
     font-family: "Prego";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/Prego/PregoRegular.woff2") format("woff2"),
-        url("/fonts/Prego/PregoRegular.otf") format("opentype");
+    src: url("../fonts/PregoBold.ttf");
 }
 
 @font-face {
-    font-family: "Prego";
+    font-family: "PregoLight";
     font-style: normal;
-    font-weight: 100;
-    src: url("/fonts/Prego/PregoLight.woff2") format("woff2");
+    font-weight: 700;
+    src: url("../fonts/PregoLight.ttf");
 }
 
 html {
@@ -200,7 +199,7 @@ ul {
 .font-prego {
     font-family: "Prego";
     font-size: 70px;
-    font-weight: 200;
+    font-weight: 600;
     letter-spacing: -2.8px;
     text-transform: uppercase;
     margin: 0;
@@ -228,9 +227,6 @@ ul {
 }
 
 .about-description {
-    font-family: "Articulat CF", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
     letter-spacing: -0.72px;
     margin: 0;
     padding: 0;
@@ -247,9 +243,9 @@ ul {
 }
 
 .about-sub_h1 {
-    font-family: "Articulat CF", sans-serif;
+    font-family: "Articulat CF Light", sans-serif;
     font-size: 70px;
-    font-weight: 100;
+    font-weight: 250;
     font-style: italic;
     line-height: 90%;
     letter-spacing: -2.8px;
@@ -260,6 +256,9 @@ ul {
 }
 
 .about-greeting {
+    font-family: "Articulat CF Light", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
     margin: 0;
     margin-top: 60px;
     margin-left: 60px;
@@ -267,6 +266,9 @@ ul {
 }
 
 .about-list {
+    font-family: "Articulat CF Light", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
     margin: 0;
     margin-top: 40px;
     margin-left: 60px;
@@ -645,7 +647,7 @@ ul {
 }
 
 #cta {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 40px;
 }
 
 .cta-form_questions {
@@ -696,7 +698,6 @@ ul {
 
 .cta-button {
     height: 70px;
-    /* margin-bottom: 40px; */
     border: 1px solid rgba(35, 35, 35, 0.20);
     border-radius: 50px;
     background: #232323;

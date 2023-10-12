@@ -217,23 +217,6 @@
                         мой английский очень вырос и продолжает расти. 
                     </p>
                 </div>
-                <div class="slider-slide">
-                    <a class="slider-user" href="https://t.me/Daban_Ashwood"  target="_ blank">
-                        <div class="feedback_user-photo">
-                            <img class="Daban_Ashwood" src="../Speaking Club/images/Daban_Ashwood.jpg" width="60px" height="60px" style="border-radius: 50%;">
-                        </div>
-                        <p class="feedback_user-name">
-                            Максим (@Daban_Ashwood)
-                        </p>
-                    </a>
-                    <p class="feedback_user-text">
-                        Анна Сергеевна, спасибо вам большое за ваши уроки китайского! 
-                        Переживал, что такой сложный язык мне не под силу, но 
-                        благодаря вам всё оказалось не так сложно. Спасибо Вам 
-                        за мемы и карточки со словами! Теперь я понтуюсь перед друзьями, 
-                        когда вижу китайские иероглифы)
-                    </p>
-                </div>
             </div>
         </section>
         
@@ -241,15 +224,15 @@
 
         <section class="call-to-action">
             <div class="white-back">
-                <div id="cta" class="cta-form_questions">
+                <div class="cta-form_questions">
                     <h1>Есть вопросы?</h1>
                     <p>Заполните форму и я свяжусь с вами</p>
                     <p class="cta-form_description">Мы всегда рады новым собеседникам!</p>
                 </div>
-                <form class="cta-form" action="index.html" method="post">
-                    <input class="cta-form__item" type="text" id="name" name="student_name" placeholder="Имя">
-                    <input class="cta-form__item" type="text" id="second name" name="student_second_name" placeholder="Ваш запрос">
-                    <input class="cta-form__item" type="tel" id="tel" name="student_tel" placeholder="Номер телефона">
+                <form id="cta" class="cta-form" action="index.html" method="post">
+                    <input class="cta-form__item cta-form__item-name" type="text" id="name" name="student_name" placeholder="Имя">
+                    <input class="cta-form__item cta-form__item-request" type="text" id="request" name="student_request" placeholder="Ваш запрос">
+                    <input class="cta-form__item cta-form__item-tel" type="tel" id="tel" name="student_tel" placeholder="Номер телефона">
                     <button class="cta-button" id="cta-button" ></button>
                 </form>
             </div>
@@ -304,9 +287,35 @@
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script type="text/javascript" src="slick/slick.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
-        
+
+
+        <!-- Отправка формы в телеграмм-бот -->
+
+        <script>
+
+        const chat_id = "-1001809592541";
+        const token = "6405936227:AAGV1sAITPIUxiu5matNG1nd1qQZazHMZWQ";
+        const URI_API = `https://api.telegram.org/bot${ token }/sendMessage`;
+
+        document.getElementById('cta').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            let message = '<b>Заявка с сайта</b>\n';
+            message += `<b>Имя: </b> ${this.name.value }'\n'`;
+            message += `<b>Запрос: </b> ${this.request.value }'\n'`;
+            message += `<b>Телефон: </b> ${this.tel.value }`;
+
+            axios.post(URI_API, {
+                chat_id: chat_id,
+                parse_mode: 'html',
+                text: message
+            })
+})
+        </script>
+
     </body>
 </html>
 
