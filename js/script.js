@@ -17,7 +17,7 @@ $(document).ready(function(){
 // Отправка формы в телеграмм-бот
 
 const chat_id = "-1001809592541";
-const token = "6405936227:AAGV1sAITPIUxiu5matNG1nd1qQZazHMZWQ";
+const token = "";
 const URI_API = `https://api.telegram.org/bot${ token }/sendMessage`;
 
 document.getElementById('cta').addEventListener('submit', function(e) {
