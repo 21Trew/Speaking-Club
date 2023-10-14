@@ -646,7 +646,8 @@ ul {
 
 }
 
-#cta {
+#cta,
+#call-to-action {
     scroll-margin-top: 40px;
 }
 
